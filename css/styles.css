@@ -19,6 +19,44 @@
    Author's styles
    ---------------------------------------------------------*/
 
+ @font-face {
+     font-family: 'Canela Thin';
+     src: url('../fonts/Canela-Thin.eot');
+     src: url('../fonts/Canela-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Canela-Thin.woff2') format('woff2'),
+         url('../fonts/Canela-Thin.woff') format('woff');
+     font-weight: 100;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: 'Canela Thin Italic';
+     src: url('../fonts/Canela-ThinItalic.eot');
+     src: url('../fonts/Canela-ThinItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Canela-ThinItalic.woff2') format('woff2'),
+         url('../fonts/Canela-ThinItalic.woff') format('woff');
+     font-weight: 100;
+     font-style: italic;
+ }
+ @font-face {
+     font-family: 'AktivGrotesk Light';
+     src: url('../fonts/AktivGrotesk-Light.eot');
+     src: url('../fonts/AktivGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AktivGrotesk-Light.woff2') format('woff2'),
+         url('../fonts/AktivGrotesk-Light.woff') format('woff');
+     font-weight: 300;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: 'AktivGrotesk Regular';
+     src: url('../fonts/AktivGrotesk-Regular.eot');
+     src: url('../fonts/AktivGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AktivGrotesk-Regular.woff2') format('woff2'),
+         url('../fonts/AktivGrotesk-Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
+
 body {
   background: #E6E6E3;
 }
@@ -52,7 +90,7 @@ img {
 }
 
 h1, h2 {
-  font-family: 'Canela';
+  font-family: 'Canela Thin';
   font-weight: 100;
   text-align: center;
 }
@@ -62,18 +100,19 @@ h1 {
   margin-bottom: 24px;
 }
 h2 {
+  font-family: 'Canela Thin Italic';
   font-size: 56px;
-  font-style: italic;
+  /* font-style: italic; */
   margin-top: 0;
 }
 h3 {
-  font-family: 'AktivGrotesk-Light';
+  font-family: 'AktivGrotesk Light';
   font-size: 16px;
   text-align: center;
   letter-spacing: .5px;
 }
 h3 a {
-  font-family: 'AktivGrotesk-Regular';
+  font-family: 'AktivGrotesk Regular';
   color: #000 !important;
   text-decoration: none;
 }
@@ -98,7 +137,7 @@ section header {
   min-height: 100vh;
 }
 blockquote {
-  font-family: 'Canela';
+  font-family: 'Canela Thin';
   font-weight: 100;
   max-width: 70%;
   font-size: 32px;
