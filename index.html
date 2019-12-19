@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Set this to the main language of your site -->
+<head>
+    <meta charset="utf-8">
+
+    <title>hi dude</title>
+
+    <!-- Enter a brief description of your page -->
+    <meta name="description" content="">
+
+    <!-- Define a viewport to mobile devices to use - telling the browser to assume that the page is as wide as the device (width=device-width,
+    and setting the initial page zoom level to be 1 (initial-scale=1.0), and fixing width=device-width for iOS9 (shtink-to-fit=no) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Add normalize.css which enables browsers to render all elements more consistently and in line with modern standards as it only targets particular styles that need normalizing -->
+    <link href="css/normalize.css" rel="stylesheet" media="all">
+    <!-- For legacy support (IE 6/7, Firefox < 4, and Safari < 5) use normalize-legacy.css instead -->
+    <!--<link href="css/normalize-legacy.css" rel="stylesheet" media="all">-->
+
+    <!-- Include the site stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" media="all">
+
+    <!-- Include the HTML5 shiv print polyfill for Internet Explorer browsers 8 and below -->
+    <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+
+    <!-- The page header typically contains items such as your site heading, logo and possibly the main site navigation -->
+    <!-- ARIA: the landmark role "banner" is set as it is the prime heading or internal title of the page -->
+    <header class="hero" role="banner">
+      <a href="#"><img src="img/hz-logo.svg" alt="Hazlitt Magazine" /></a>
+      <div class="hero-text">
+        <h1>Giving Up the Ghost:</h1>
+        <h2>Life and Death By Misadventure</h2>
+        <h3>
+          <div>By <a href="#">Brin-Jonathan Butler</a></div>
+          <div>Illustrations by <a href="#">Someone Cool</a></div>
+        </h3>
+      </div>
+        <!-- ARIA: the landmark role "navigation" is added here as the element contains site navigation
+        NOTE: The <nav> element does not have to be contained within a <header> element, even though the two examples on this page are. -->
+        <nav role="navigation">
+            <!-- This can contain your site navigation either in an unordered list or even a paragraph that contains links that allow users to navigate your site -->
+        </nav>
+
+    </header>
+
+    <!-- If you want to use an element as a wrapper, i.e. for styling only, then <div> is still the element to use -->
+    <div class="wrap">
+
+        <!-- The <main> element is used to enclose the main content, i.e. that which contains the central topic of a document -->
+        <!-- ARIA: the landmark role "main" is added here as it contains the main content of the document, and it is recommended to add it to the
+        <main> element until user agents implement the required role mapping. -->
+        <main role="main">
+
+            <!-- The <section> element can be used to enclose content that comes under a related heading.
+            NOTE: The <section> element can contain <article> elements and vice versa, if you think the content warrants it. -->
+            <section>
+
+                <!-- This is the section's header. It contains the heading and navigation links for within the section -->
+                <header>
+                  <h2 class="chapter-title">Chapter One</h2>
+                  <blockquote>
+                    &ldquo;It’s strange how you remember certain things and forget others. If, all of a sudden, we remembered everything that we have forgotten and forgot everything that we remember, we would be completely different people.&rdquo;
+                    <span>&mdash; Michelangelo Antonioni</span>
+                  </blockquote>
+
+                </header>
+
+                <p>On June 8, 2018, after hours of driving under the sweltering Andalusian sky, <em>leaving behind the haunting grandeur of Granada</em>, the stubbornly snow-capped Sierra Nevada mountains framing the horizon, I had just reached the outskirts of Almeria when the news of Anthony Bourdain’s death came on the radio. The Mediterranean Sea had just come into view, out beyond the strange pale expanse of the “Mar de plastico” (Sea of Plastic), 20,000 distant greenhouses spread out over the desert coastline like the shattered pieces of a broken mirror, shielding millions of tons of citrus groves, nuts, and vegetables.</p>
+
+                <p>When they mentioned Bourdain was found inside his hotel room in Kaysersberg, France, I turned off the radio, then pulled over at the next gas station to buy a pack of cigarettes. After three months on the wagon––my longest stretch in years––my nerves needed a crutch for the remaining fifty-mile drive to my destination in Vera, Spain.</p>
+
+                <img src="img/test.jpg" class="still" />
+
+                <p>I remembered the former chain-smoking Bourdain had quit in 2007, after the birth of his daughter. “I mean, I’ve had more time on this Earth than I probably deserve,” he confessed in an interview about the subject. “But now I feel that I owe this child who loves me to at least try to live a little longer, you know?” Seven months before his suicide, while on camera for Parts Unknown in the south of Italy, he spontaneously lit a cigarette after a satisfying meal. Bourdain offered the moment to his audience almost coyly, but after holding the first puff of smoke deep in his lungs, his eyes hidden behind sunglasses, for an instant I could have sworn Bourdain got emotional. Abruptly, the camera cut away to a child’s hands with interwoven fingers coming apart against the sky, followed by a slow zoom toward the upturned face of a wooden crucified Jesus statue. Given his explicit reason for quitting, the imagery hardly seemed subtle. Over the years, in interviews, his own writing, and on camera, Bourdain hadn’t been shy about referring to or joking about his own suicide—nineteen times, specifically by hanging, according to the July 8, 2018 article “Anthony Bourdain’s Long-Burning Suicidal Wick” by John E. Richters. I was 11 the first time suicide crossed my mind. Once you’ve visited the idea, I’m not sure you can ever remove the breadcrumbs leading back to its doorstep.</p>
+
+                <p>The shock of Bourdain’s death held an eerie symmetry: I was near the end of a Quixotic (the last of the giant windmills defending the horizon was only an hour behind me), 4,000-mile pilgrimage to the real location of the fictional Hotel de la Gloria, where, 45 years earlier in 1973, the filmmaker Michelangelo Antonioni had staged the murder of a journalist, documentary filmmaker, and author named David Locke, gunned down in his room at the age of 37 in a case of mistaken identity. Compounding the central mystery of Antonioni’s metaphysical detective story and fatalistic fairytale The Passenger, Locke, the miscast hero of his own story, had secretly committed a form of suicide only a week inside a different yet similarly lonely hotel room.</p>
+
+            </section>
+
+        </main>
+
+        <!-- An <aside> is used to enclose content that is additional to the main content but not essential. If it were removed, the meaning of the main content should not be lost, but the content of the <aside> also retains its meaning.
+        NOTE: the aside is placed outside of the <main> element as while its content is related to the content that is within the <main>
+        element, it is not part of it -->
+        <!-- ARIA: the landmark role "complementary" is added here as it contains supporting information for the main content that remains meaningful even when separated from it -->
+        <!-- <aside role="complementary"> -->
+
+            <!-- A <header> element is not required here as the heading only contains a single <h3> element -->
+            <!-- <h4>Did you know?</h4> -->
+
+            <!-- Content -->
+            <!-- <p>The article and section elements cause a lot of confusion when people are trying to decide how and when to use them. The article: <a href="http://www.iandevlin.com/blog/2011/04/html5/html5-section-or-article">section or article?</a> might help you choose.</p> -->
+
+        <!-- </aside> -->
+
+    </div>
+
+    <!-- The main page footer can contain items such as copyright and contact information. It can also contain a duplicated navigation of your site which is not usually contained within a <nav> -->
+    <!-- ARIA: the landmark role "contentinfo" is added here as it contains metadata that applies to the parent document -->
+    <footer role="contentinfo">
+
+        <!-- The <address> element contains contact information for the nearest <article> or <body> element. This example is for the <body> -->
+        <address>
+          <!-- <p>For further information, please contact <a href="mailto:admin@example.com">Max Mustermann</a>.</p> -->
+        </address>
+
+        <!-- Copyright information can be contained within the <small> element. The <time> element is used here to indicate that the '2018' is a date -->
+        <!-- <small>Copyright &copy; <time>2018</time></small> -->
+
+    </footer>
+
+</body>
+</html>
