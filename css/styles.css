@@ -177,7 +177,8 @@ p {
 
 /* gallery */
 .gallery {
-  margin: 168px 0;
+  margin-top: 168px;
+  margin-bottom: 96px;
 }
 .grid .item img {
   width: 100%;
@@ -203,6 +204,46 @@ p {
 .i-d {
   grid-column: 5/span 1;
   grid-row: 5/span 4;
+}
+
+.j-a {
+  grid-column: 4/span 4;
+  grid-row: 2/span 4;
+}
+.j-b {
+  grid-column: 8/span 4;
+  grid-row: 1/span 4;
+}
+.j-c {
+  grid-column: 8/span 4;
+  grid-row: 5/span 1;
+}
+
+.k-a {
+  grid-column: 4/span 6;
+  grid-row: 1/span 5;
+}
+.k-b {
+  grid-column: 4/span 6;
+  grid-row: 6/span 1;
+}
+
+.l-a {
+  grid-column: 6/span 6;
+  grid-row: 1/span 5;
+}
+.l-b {
+  grid-column: 6/span 6;
+  grid-row: 6/span 1;
+}
+
+.m-a {
+  grid-column: 1/span 14;
+  grid-row: 1/span 7;
+}
+.m-b {
+  grid-column: 4/span 6;
+  grid-row: 8/span 1;
 }
 
 
