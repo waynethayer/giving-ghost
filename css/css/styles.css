@@ -1,0 +1,285 @@
+/* ---------------------------------------------------------
+   HTML5 Bones
+   This stylesheet contains print styling and a section for
+   you to simply add your own. This is a basic template
+   after all.
+   ---------------------------------------------------------*/
+    body {
+
+    }
+    /* Default link styling */
+    a:link { color:#0271fb; }
+    a:visited { color:#bd02fb; }
+    a:hover, a:focus { color:#000; }
+    a:active { color:#fb0e02; }
+
+
+
+/* ---------------------------------------------------------
+   Author's styles
+   ---------------------------------------------------------*/
+
+ @font-face {
+     font-family: 'Canela Thin';
+     src: url('../fonts/Canela-Thin.eot');
+     src: url('../fonts/Canela-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Canela-Thin.woff2') format('woff2'),
+         url('../fonts/Canela-Thin.woff') format('woff');
+     font-weight: 100;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: 'Canela Thin Italic';
+     src: url('../fonts/Canela-ThinItalic.eot');
+     src: url('../fonts/Canela-ThinItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Canela-ThinItalic.woff2') format('woff2'),
+         url('../fonts/Canela-ThinItalic.woff') format('woff');
+     font-weight: 100;
+     font-style: italic;
+ }
+ @font-face {
+     font-family: 'AktivGrotesk Light';
+     src: url('../fonts/AktivGrotesk-Light.eot');
+     src: url('../fonts/AktivGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AktivGrotesk-Light.woff2') format('woff2'),
+         url('../fonts/AktivGrotesk-Light.woff') format('woff');
+     font-weight: 300;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: 'AktivGrotesk Regular';
+     src: url('../fonts/AktivGrotesk-Regular.eot');
+     src: url('../fonts/AktivGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AktivGrotesk-Regular.woff2') format('woff2'),
+         url('../fonts/AktivGrotesk-Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+body {
+  background: #E6E6E3;
+}
+
+.grid {
+  width: 98vw;
+  display: grid;
+  grid-template-columns: 1vw 2vw 3vw repeat(8, 1fr) 3vw 2vw 1vw;
+  grid-template-rows: 7vw;
+  grid-auto-rows: 7vw;
+  grid-auto-flow: row;
+  grid-gap: 1vw;
+  margin: 0 auto;
+}
+.item {
+  display: flex;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  margin-bottom: 50vh;
+  background: url('../img/hero.png') no-repeat 0 410%;
+  /* background-size: cover; */
+}
+.hero-text {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.hero img {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  max-width: 80px;
+  height: auto;
+}
+
+h1, h2 {
+  font-family: 'Canela Thin';
+  font-weight: 100;
+  color: #1d2326;
+  text-align: center;
+}
+h1 {
+  font-size: 120px;
+  margin-bottom: 24px;
+}
+h2 {
+  font-family: 'Canela Thin Italic';
+  font-size: 56px;
+  margin-top: 0;
+}
+h3 {
+  font-family: 'AktivGrotesk Light';
+  font-size: 16px;
+  color: #1d2326;
+  text-align: center;
+  letter-spacing: .5px;
+}
+h3 a {
+  font-family: 'AktivGrotesk Regular';
+  color: #1d2326 !important;
+  text-decoration: none;
+
+}
+h3 div {
+  display: inline-block;
+  margin-right: 48px;
+}
+h3 div:last-of-type {
+  margin-right: 0;
+}
+p, blockquote, span {
+  font-family: 'Lora';
+}
+
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+}
+section header {
+  min-height: 100vh;
+}
+blockquote {
+  font-family: 'Canela Thin';
+  font-weight: 100;
+  max-width: 70%;
+  font-size: 32px;
+  line-height: 1.4;
+  text-indent: -12px;
+  margin: 0 auto;
+}
+blockquote span {
+  font-size: 17px;
+}
+blockquote.pull {
+  text-indent: 0;
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+
+p {
+  font-size: 19px;
+  line-height: 1.7;
+  color: #1d2326;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
+}
+
+/* gallery */
+.gallery {
+  margin-top: 168px;
+  margin-bottom: 96px;
+}
+.grid .item img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.caption {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.i-a {
+  grid-column: 4/span 5;
+  grid-row: 1/span 4;
+}
+.i-b {
+  grid-column: 9/span 3;
+  grid-row: 2/span 3;
+}
+.i-c {
+  grid-column: 6/span 5;
+  grid-row: 5/span 4;
+}
+.i-d {
+  grid-column: 5/span 1;
+  grid-row: 5/span 4;
+}
+
+.j-a {
+  grid-column: 4/span 4;
+  grid-row: 2/span 4;
+}
+.j-b {
+  grid-column: 8/span 4;
+  grid-row: 1/span 4;
+}
+.j-c {
+  grid-column: 8/span 4;
+  grid-row: 5/span 1;
+}
+
+.k-a {
+  grid-column: 4/span 6;
+  grid-row: 1/span 5;
+}
+.k-b {
+  grid-column: 4/span 6;
+  grid-row: 6/span 1;
+}
+
+.l-a {
+  grid-column: 6/span 6;
+  grid-row: 1/span 5;
+}
+.l-b {
+  grid-column: 6/span 6;
+  grid-row: 6/span 1;
+}
+
+.m-a {
+  grid-column: 1/span 14;
+  grid-row: 1/span 7;
+}
+.m-b {
+  grid-column: 4/span 6;
+  grid-row: 8/span 1;
+}
+
+
+
+/* ---------------------------------------------------------
+   Print styles
+   ---------------------------------------------------------*/
+@media print {
+    * {
+        color:#000 !important;
+        box-shadow:none !important;
+        text-shadow:none !important;
+        background:transparent !important;
+    }
+    html { background-color:#fff; }
+    /* Hide navigation */
+    nav { display:none; }
+
+    /* Show link destinations in brackets after the link text */
+    a[href]:after { content: " (" attr(href) ") "; }
+    a[href] {
+        font-weight:bold;
+        text-decoration:underline;
+        color:#06c;
+        border:none;
+    }
+    /* Don't show link destinations for JavaScript or internal links */
+    a[href^="javascript:"]:after, a[href^="#"]:after { content:""; }
+
+    /* Show abbr title value in brackets after the text */
+    abbr[title]:after { content: " (" attr(title) ")"; }
+
+    figure {
+        margin-bottom:1em;
+        overflow:hidden;
+    }
+
+    figure img { border:1px solid #000; }
+}
