@@ -70,6 +70,7 @@ body {
   grid-auto-flow: row;
   grid-gap: 1vw;
   margin: 0 auto;
+  overflow: hidden;
 }
 .item {
   display: flex;
@@ -80,7 +81,6 @@ body {
   height: 100vh;
   margin-bottom: 50vh;
   background: url('../img/hero.png') no-repeat 0 410%;
-  /* background-size: cover; */
 }
 .hero-text {
   position: absolute;
@@ -90,7 +90,7 @@ body {
   left: 50%;
   transform: translate(-50%,-50%);
 }
-.hero img {
+.hero .logo {
   position: absolute;
   top: 24px;
   left: 50%;
@@ -145,7 +145,8 @@ section {
   margin-right: auto;
 }
 section header {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  margin-bottom: 20vh;
 }
 blockquote {
   font-family: 'Canela Thin';
@@ -166,8 +167,8 @@ blockquote.pull {
 }
 
 p {
-  font-size: 21px;
-  line-height: 1.8;
+  font-size: 19px;
+  line-height: 1.7;
   color: #1d2326;
   max-width: 620px;
   margin-left: auto;
