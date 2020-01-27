@@ -23,6 +23,7 @@
 
     <!-- Include the HTML5 shiv print polyfill for Internet Explorer browsers 8 and below -->
     <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/scrollreveal.min.js"></script>
 </head>
 <body>
@@ -30,36 +31,37 @@
     <!-- The page header typically contains items such as your site heading, logo and possibly the main site navigation -->
     <!-- ARIA: the landmark role "banner" is set as it is the prime heading or internal title of the page -->
     <header class="hero" role="banner">
-      <a href="#"><img class="logo" src="img/hz-logo.svg" alt="Hazlitt Magazine" /></a>
+      <a href="#"><img class="logo hero-build" src="img/hz-logo.svg" alt="Hazlitt Magazine" /></a>
       <div class="hero-text">
-        <h1>Giving Up the Ghost:</h1>
-        <h2>Life and Death By Misadventure</h2>
-        <h3>
+        <h1 class="hero-build">Giving Up the Ghost:</h1>
+        <h2 class="hero-build">Life and Death By Misadventure</h2>
+        <h3 class="hero-build">
           <div>By <a href="#">Brin-Jonathan Butler</a></div>
           <div>Illustrations by <a href="#">Victoria Allen</a></div>
         </h3>
       </div>
-
-      <nav role="navigation">
-      </nav>
-
-
     </header>
 
     <!-- If you want to use an element as a wrapper, i.e. for styling only, then <div> is still the element to use -->
     <div class="wrap">
-
+        <nav role="navigation">
+          <ul>
+            <li><a href="#chapter1">Chapter One</a></li>
+            <li><a href="#chapter2">Chapter Two</a></li>
+            <li><a href="#chapter3">Chapter Three</a></li>
+            <li><a href="#chapter4">Chapter Four</a></li>
+          </ul>
+        </nav>
         <!-- The <main> element is used to enclose the main content, i.e. that which contains the central topic of a document -->
         <!-- ARIA: the landmark role "main" is added here as it contains the main content of the document, and it is recommended to add it to the
         <main> element until user agents implement the required role mapping. -->
         <main role="main">
-
             <!-- The <section> element can be used to enclose content that comes under a related heading.
             NOTE: The <section> element can contain <article> elements and vice versa, if you think the content warrants it. -->
             <section>
 
                 <!-- This is the section's header. It contains the heading and navigation links for within the section -->
-                <header>
+                <header id="chapter1">
                   <h2 class="chapter-title build">Chapter One</h2>
                   <blockquote class="pull build">
                     &ldquo;It’s strange how you remember certain things and forget others. If, all of a sudden, we remembered everything that we have forgotten and forgot everything that we remember, we would be completely different people.&rdquo;
@@ -131,7 +133,7 @@
                 <p>Bourdain was an obsessive cinephile, and I’d read that Antonioni&mdash;along with Truffaut, Kurosawa, Fellini, Godard, and Cassavetes––was one of his favorites. Maybe as a teenager he saw <em>The Passenger</em> with his parents, who he said made a point of going into Manhattan in the 1970s to see everything Antonioni did. I wondered, if he had seen it, if the film’s themes rang any bells for him. For Antonioni, the themes <em>he</em> saw in the story reminded him of one of his&mdash;and my&mdash;favorite writers, Italo Calvino, who once defined a classic as something &ldquo;that never finishes saying what it has to say.&rdquo;</p>
                 <p>Calvino also wrote in <em>Invisible Cities</em>, my favorite novel: &ldquo;Arriving at each new city, the traveler finds again a past of his that he did not know he had: the foreignness of what you no longer are or no longer possess lies in wait for you in foreign, unpossessed places.&rdquo;</p>
                 <p>Sooner or later, after returning to any place you love, you run up against the intrusion of time’s sneaky crosswind. It blows against the ambient reassurance the returns will be inexhaustible, hold more impetus, richer details, and, if you’re fortunate, deeper meaning and resonance. The crosswind whispers that there’s no special guarantee that another return holds more of what you first found there. The fleetingness of your encounter is suspended. It’s a reminder each return is as fragile as the life that brought you back along with all the life surrounding you––family, friends, acquaintances, strangers. Suddenly the complexion of everything streaking by out your window is imbued with the possibility that you might be glimpsing it for the last time. It was yours to always return to a minute ago, then it snaps into focus that you’re just passing through, spooked by the winking force of inevitability that somewhere down the line you’ll have to let it go.</p>
-                <p>***</p>
+                <p  id="chapter2">***</p>
                 <br />
                 <br />
                 <br />
@@ -286,7 +288,7 @@
 
               <p>I was waiting around to have a word with him myself.</p>
 
-              <p>***</p>
+              <p id="chapter3">***</p>
               <br />
               <br />
               <br />
@@ -512,7 +514,15 @@
 
               <p>The funeral procession that followed his casket ran for half a mile. It was so large, some Spaniards mistakenly joined in mourning assuming it must be for one of Spain’s top matadors recently killed in the Plaza de Toros. Gaudi was buried in the Sagrada Familia, a church he began work on in 1883 and that remains unfinished to this day.</p>
 
-              <p>***</p>
+              <p id="chapter4">***</p>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
 
             </section>
 
@@ -937,5 +947,14 @@
 <script>
 	ScrollReveal().reveal('.faded', { duration: 1500, scale: 1.075, delay: 0, easing: 'cubic-bezier(0.5, 0.0, 0.5, 1.000)' } );
   ScrollReveal().reveal('.build', { duration: 1500, interval: 250, delay: 250, easing: 'cubic-bezier(0.5, 0.0, 0.5, 1.000)' } );
+  ScrollReveal().reveal('.hero-build', { duration: 1500, interval: 550, delay: 350, easing: 'cubic-bezier(0.5, 0.0, 0.5, 1.000)' } );
+
+  $(document).on('click', 'a[href^="#"]', function (event) {
+    // event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+    return false;
+  });
 </script>
 </html>
